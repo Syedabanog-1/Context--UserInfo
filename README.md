@@ -1,4 +1,17 @@
+                                                             ***CONTEXT MANAGEMENT***
+                                                             
+Context management refers to the technique of managing resources or states (like variables, sessions, environments, etc.) during the execution of a program or function, ensuring proper setup and cleanup (e.g., opening/closing files or managing temporary data).
 
+ RunContextWrapper is a special wrapper used in the OpenAI Agent SDK to hold and manage the execution context during a run. It gives access to metadata (like input, user info, history, etc.) and is passed to functions/tools to dynamically adapt based on the user's session or data.
+ 
+** Example use case:**
+Inside a @function_tool,
+if define def func(wrapper: RunContextWrapper):, 
+it means function will have access to the full run context (like user input, config, previous steps, etc.).
+
+
+Objective of this programe:
+**************************
 This Python program demonstrates how to build a simple AI agent using the OpenAI Agent SDK. The agent retrieves and displays structured user information (name, age, alive status, roll number) from a User_Info model in response to a natural language prompt. It uses the function_tool feature to fetch contextual data and dynamically guide the agent's behavior.
 
 Workflow:
