@@ -57,6 +57,19 @@ OUTPUT DISPLAY:
 
 The user's roll number is: q110110, and his name is: Ali. His age is: 23, and alive status: True.
 
+CONTEXT:
+*******
+***USER INFORMATION
+***CUSTOMER BANK ACCOUNT DETAILS
+***STUDENT PROFILE
+***LIBRARY BOOK DETAILS
+
+https://github.com/user-attachments/assets/c5160cb8-e729-4153-9ea4-cbe298502a00
+
+<img width="1612" height="906" alt="context_library_book_details" src="https://github.com/user-attachments/assets/0ab309ca-2317-43a7-b57d-9cf0d0393797" />
+<img width="1609" height="901" alt="context_student_details" src="https://github.com/user-attachments/assets/2c796431-86ce-44a9-9947-6d4aada77573" />
+<img width="1611" height="905" alt="context_customer_bank_accoumt_details" src="https://github.com/user-attachments/assets/a51bf9ef-6572-4844-8495-9af39bb8bf46" />
+<img width="1610" height="904" alt="Context_userinfo" src="https://github.com/user-attachments/assets/656a6349-c02d-4fd4-b576-4e268f2aba8b" />
 
 
 https://github.com/user-attachments/assets/a720082a-41f4-4fd4-9a90-5153140b3414
