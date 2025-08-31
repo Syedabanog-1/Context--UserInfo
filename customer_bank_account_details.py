@@ -1,10 +1,13 @@
 # 2. STUDENT PROFILE CONTEXT
 
 import asyncio
-from connection import config
+#from connection import config
 from agents import Agent, RunContextWrapper, Runner, function_tool
 from pydantic import BaseModel
 import rich
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class BankAccount(BaseModel):
     account_number: str
@@ -37,7 +40,7 @@ async def main():
     result = await Runner.run(
         customer_bankaccount_agent,
         'Give Customer Bank Account Details:', 
-        run_config=config,
+        #run_config=config,
         context=bank_account  # Local context
     )
     rich.print(result.final_output)

@@ -1,10 +1,13 @@
 # 2. STUDENT PROFILE CONTEXT
 
 import asyncio
-from connection import config
+#from connection import config
 from agents import Agent, RunContextWrapper, Runner, function_tool
 from pydantic import BaseModel
 import rich
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class StudentProfile(BaseModel):
     student_id: int | str
@@ -37,7 +40,7 @@ async def main():
     result = await Runner.run(
         personal_agent,
         'Provide student profile containing student name, student id, current semester, and total courses', 
-        run_config=config,
+        #run_config=config,
         context=student  # Local context
     )
     rich.print(result.final_output)

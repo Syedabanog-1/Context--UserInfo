@@ -1,10 +1,13 @@
 # 2. STUDENT PROFILE CONTEXT
 
 import asyncio
-from connection import config
+#from connection import config
 from agents import Agent, RunContextWrapper, Runner, function_tool
 from pydantic import BaseModel
 import rich
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class LibraryBook(BaseModel):
     book_id: str
@@ -36,7 +39,7 @@ async def main():
     result = await Runner.run(
         library_book_agent,
         'Give Library Book Details:', 
-        run_config=config,
+        #run_config=config,
         context=library_book  # Local context
     )
     rich.print(result.final_output)
